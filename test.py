@@ -17,4 +17,3 @@ for ch in qubit:
     #   The above statement is used for flipping the bits.
     #   If the user wants 1100 as the qubits to be entered,
     #   He can flip the 1st 2 bits by using NOT gate
-
