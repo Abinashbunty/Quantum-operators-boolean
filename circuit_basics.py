@@ -12,23 +12,25 @@ circ.cx(0, 1)
 # the qubits in a GHZ state.
 circ.cx(0, 2)
 
-circ.draw('mpl')
+print(circ)
 
-from qiskit.quantum_info import Statevector
+# circ.draw('mpl')
 
-# Set the intial state of the simulator to the ground state using from_int
-state = Statevector.from_int(0, 2**3)
+# from qiskit.quantum_info import Statevector
 
-# Evolve the state by the quantum circuit
-state = state.evolve(circ)
+# # Set the intial state of the simulator to the ground state using from_int
+# state = Statevector.from_int(0, 2**3)
 
-#draw using latex
-state.draw('latex')
+# # Evolve the state by the quantum circuit
+# state = state.evolve(circ)
+
+# #draw using latex
+# state.draw('latex')
 
 
-from qiskit.visualization import array_to_latex
+# from qiskit.visualization import array_to_latex
 
-#Alternative way of representing in latex
-array_to_latex(state)
+# #Alternative way of representing in latex
+# array_to_latex(state)
 
-state.draw('qsphere')
+# state.draw('qsphere')
