@@ -1,5 +1,5 @@
-from qiskit import QuantumProgram
-Q_obj = QuantumProgram() #Quantum object created
+from qiskit import QuantumCircuit
+Q_obj = QuantumCircuit() #Quantum object created
 backend = 'local_qasm_simulator'
 
 qr = Q_obj.create_quantum_register("qr", 1)
